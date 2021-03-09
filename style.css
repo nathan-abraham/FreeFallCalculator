@@ -1,0 +1,139 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: Century Gothic;
+}
+#page1 {
+  background: url('back.jpg') no-repeat top center;
+  background-size: cover;
+  height: 100vh;
+}
+#page2 {
+  background: url('background2.jpg') no-repeat top center;
+  background-size: cover;
+  height: 100vh;
+}
+#page3 {
+  background: url('background3.jpg') no-repeat top center;
+  background-size: cover;
+  height: 100vh;
+}
+table {
+  table-layout: fixed;
+}
+table tr {
+  color: #c5ecfd;
+}
+table tr td{
+  padding: 20px;
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.8);
+}
+li {
+  float: right;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: rgba(17, 17, 17, 0.829);
+}
+.main {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  padding: 0 20px;
+}
+input {
+  text-align: center;
+  font-size: 15px;
+}
+form {
+  display: flex;
+  max-width: 550px;
+  max-height: 380px;
+  margin: 0 auto;
+  background: rgba(0,0,0,0.8);
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.input {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+}
+.input {
+  margin: 5px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid #c5ecfd;
+  padding: 5px;
+  color: #c5ecfd;
+  width: 100%;
+}
+#velocity {
+  margin-bottom: 20px;
+}
+::-webkit-input-placeholder {
+  color: #c5ecfd;
+}
+.button {
+  position: absolute;
+  top: 85%;
+  left: 46%;
+  background: #39b7dd;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  height: 30px;
+  width: 100px;
+}
+.earth {
+  color: #c5ecfd;
+}
+.jupiter-button {
+  background: #ffa500;
+}
+.jupiter {
+  color: #fed8b1;
+}
+.jupiter-input {
+  margin: 5px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid #fed8b1;
+  padding: 5px;
+  color: #fed8b1;
+  width: 100%;
+}
+.mars {
+  color: #ffaccb;
+}
+.mars-button {
+  background: #ff2000;
+}
+.mars-input {
+  margin: 5px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid #ffaccb;
+  padding: 5px;
+  color: #ffaccb;
+  width: 100%;
+}

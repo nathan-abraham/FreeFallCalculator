@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Free Fall Calculator</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body id="page3">
+    <div class="navbar">
+      <ul>
+        <li><a href="mars.html" class="mars">Mars</a></li>
+        <li><a href="jupiter.html" class="jupiter">Jupiter</a></li>
+        <li><a href="index.html" class="earth">Earth</a></li>
+      </ul>
+    </div>
+    <div class="main">
+      <form>
+        <table rules="rows">
+        <tr>
+          <th class="mars">Quantity</th>
+          <th class="mars">Value</th>
+          <th class="mars">Units</th>
+        </tr>
+        <tr>
+          <td class="mars">Height:</td>
+          <td id="Height" class="mars"><input type="text" name="Height" class="mars-input" id="height"  onchange="ComputeFreeFallMars()"></td>
+          <td class="mars">Meters (m)</td>
+        </tr>
+        <tr>
+          <td class="mars">Time of Fall:</td>
+          <td id="Time" class="mars"><input type="text" name="Time" id="time" class="mars-input" onchange="ComputeFreeFallMars()"></td>
+          <td class="mars">Seconds (s)</td>
+        </tr>
+        <tr>
+          <td class="mars">Final Velocity:</td>
+          <td id="Velocity" class="mars"><input type="text" name="Velocity" id="velocity" class="mars-input" onchange="ComputeFreeFallMars()"></td>
+          <td class="mars">Meters per Second (m/s)</td>
+        </tr>
+      </table>
+      <button type="button" class="button mars-button" onclick="location.reload()">Reset</button>
+        <!--
+        <div class="input">
+          <input type="text" name="Height" placeholder="Height (m)" id="height" onchange="ComputeFreeFallEarth()">
+          <br>
+          <input type="text" name="Time" placeholder="Time of Fall (s)" id="time" onchange="ComputeFreeFallEarth()">
+          <br>
+          <input type="text" name="Velocity" placeholder="Final Velocity (m/s)" id="velocity" onchange="ComputeFreeFallEarth()">
+          <br>
+          <button type="button" class="button" onclick="ComputeFreeFallEarth()">Calculate</button>
+        </div>
+        -->
+      </form>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

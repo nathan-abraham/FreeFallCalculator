@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Free Fall Calculator</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body id="page1">
+    <div class="navbar">
+      <ul>
+        <li><a href="mars.html" class="mars">Mars</a></li>
+        <li><a href="jupiter.html" class="jupiter">Jupiter</a></li>
+        <li><a href="index.html" class="earth">Earth</a></li>
+      </ul>
+    </div>
+    <div class="main">
+      <form>
+        <table rules="rows">
+        <tr>
+          <th>Quantity</th>
+          <th>Value</th>
+          <th>Units</th>
+        </tr>
+        <tr>
+          <td>Height:</td>
+          <td id="Height"><input type="text" name="Height" class="input" id="height" onchange="ComputeFreeFallEarth()"></td>
+          <td>Meters (m)</td>
+        </tr>
+        <tr>
+          <td>Time of Fall:</td>
+          <td id="Time"><input type="text" name="Time" class="input" id="time" onchange="ComputeFreeFallEarth()"></td>
+          <td>Seconds (s)</td>
+        </tr>
+        <tr>
+          <td>Final Velocity:</td>
+          <td id="Velocity"><input type="text" name="Velocity" class="input" id="velocity" onchange="ComputeFreeFallEarth()"></td>
+          <td>Meters per Second (m/s)</td>
+        </tr>
+      </table>
+      <button type="button" class="button" onclick="location.reload()">Reset</button>
+      </form>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
